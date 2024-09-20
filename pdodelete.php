@@ -5,7 +5,7 @@ try {
     $baglanti = new PDO("mysql:host=localhost;dbname=veritabaniadi", "root", "");
     $baglanti->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $record_row = $baglanti->exec("DELETE FROM tabloadi WHERE id = 9");// sadece  9 nolu silinecektir.
+    $record_row = $baglanti->exec("DELETE FROM tabloadi WHERE id = 9");// sadece  9 nolu id silinecektir.
 
     if ($record_row > 0) {
         echo $record_row . " kayıt silindi. -  record deleted";
